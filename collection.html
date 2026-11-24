@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore the ORIKI collection of contemporary Yoruba-inspired traditional fashion for men and women.">
+
+    <title>Collection | ORIKI — Tradition, Tailored for Today</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Homepage Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Collection Page Styles -->
+    <link rel="stylesheet" href="collection.css">
+
+    <!-- Collection JavaScript -->
+    <script src="currency.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="collection.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- =================================
+         NAVIGATION
+    ================================== -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                ORIKI<span>.</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="/index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="collection.html" class="nav-link active"
+                    aria-current="page">
+                    Collection
+                </a>
+
+                <a href="men.html" class="nav-link">
+                    Men
+                </a>
+
+                <a href="women.html" class="nav-link">
+                    Women
+                </a>
+
+                <a href="index.html#story" class="nav-link">
+                    Our Story
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="currency-btn" id="currencyBtn" type="button">
+                    NGN ₦
+                </button>
+
+                <a href="shop.html" class="shop-btn">
+                    Cart
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navMenu"
+                    type="button">
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main>
+
+        <!-- COLLECTION HERO -->
+
+        <section class="collection-hero">
+
+            <div class="collection-hero-image">
+
+                <img
+                    src="assets/Oriki.jpg"
+                    alt="ORIKI traditional Yoruba fashion and craftsmanship">
+
+            </div>
+
+            <div class="collection-hero-overlay"></div>
+
+            <div class="collection-hero-content">
+
+                <p class="collection-hero-label">
+                    THE ORIKI COLLECTION
+                </p>
+
+                <h1>
+                    Tradition, <br>
+                    <span>Reimagined.</span>
+                </h1>
+
+                <p class="collection-hero-description">
+                    Discover clothing inspired by our heritage,
+                    shaped by craftsmanship and designed for
+                    the modern generation.
+                </p>
+
+                <a href="#products" class="collection-hero-button">
+                    EXPLORE THE COLLECTION
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLLECTION INTRODUCTION -->
+
+        <section class="collection-intro">
+
+            <div class="collection-intro-content">
+
+                <p class="section-label">
+                    ROOTED IN CULTURE
+                </p>
+
+                <h2>
+                    A Collection of <span>Identity.</span>
+                </h2>
+
+                <p>
+                    From expressive Ankara designs to carefully
+                    tailored Senator outfits, every ORIKI piece
+                    celebrates the beauty of traditional fashion.
+
+                    Explore our collection of clothing created
+                    for both men and women.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             PRODUCT COLLECTION
+        ================================== -->
+
+        <section class="all-collections" id="products">
+
+            <!-- COLLECTION HEADER -->
+
+            <div class="all-collections-header">
+
+                <div>
+
+                    <p class="section-label">
+                        DISCOVER ORIKI
+                    </p>
+
+                    <h2>
+                        Explore Our <span>Collection</span>
+                    </h2>
+
+                </div>
+
+                <p class="products-count" id="productsCount">
+                    12 PIECES
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT FILTERS -->
+
+            <div class="collection-filters"
+                aria-label="Filter collection products">
+
+                <button
+                    class="filter-btn active"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true">
+
+                    All
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="ankara"
+                    aria-pressed="false">
+
+                    Ankara
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="senator"
+                    aria-pressed="false">
+
+                    Senator
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="men"
+                    aria-pressed="false">
+
+                    Men
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    type="button"
+                    data-filter="women"
+                    aria-pressed="false">
+
+                    Women
+
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+
+            <div
+                class="collection-product-grid"
+                id="productGrid"
+                aria-live="polite">
+            </div>
+
+        </section>
+
+
+        <!-- COLLECTION CLOSING SECTION -->
+
+        <section class="collection-closing">
+
+            <div class="collection-closing-content">
+
+                <p class="section-label">
+                    THE ORIKI EXPERIENCE
+                </p>
+
+                <h2>
+                    Wear Your <span>Heritage.</span>
+                </h2>
+
+                <p>
+                    More than clothing. A connection to culture,
+                    identity and generations of craftsmanship.
+                </p>
+
+                <a href="index.html#story" class="collection-closing-link">
+                    DISCOVER OUR STORY
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="oriki-footer">
+
+        <div class="footer-main">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    ORIKI
+                </a>
+
+                <p>
+                    Rooted in heritage. Made for today.
+                    Discover clothing that celebrates
+                    identity, culture and timeless style.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-column">
+
+                <h3>EXPLORE</h3>
+
+                <a href="index.html">Home</a>
+                <a href="collection.html">Collection</a>
+                <a href="index.html#story">Our Story</a>
+
+            </div>
+
+
+            <!-- COLLECTIONS -->
+
+            <div class="footer-column">
+
+                <h3>COLLECTIONS</h3>
+
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="index.html#custom-tailoring">Custom Tailoring</a>
+                <a href="index.html#craftsmanship">Craftsmanship</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>CONTACT</h3>
+
+                <a href="mailto:hello@oriki.com">
+                    Email Us
+                </a>
+
+                <a href="#">Customer Support</a>
+                <a href="#">Shipping Information</a>
+                <a href="#">Returns & Exchanges</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ORIKI. All Rights Reserved.
+            </p>
+
+            <div>
+
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+            <span>
+                CRAFTED WITH HERITAGE.
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

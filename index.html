@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ORIKI — Yoruba heritage, reimagined through contemporary fashion.">
+    <title>ORIKI | Tradition, Tailored for Today</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="currency.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+
+            <a href="#" class="logo">ORIKI<span>.</span></a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="/collection.html" class="nav-link">Collection</a>
+                <a href="men.html" class="nav-link">Men</a>
+                <a href="women.html" class="nav-link">Women</a>
+                <a href="#story" class="nav-link">Our Story</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="currency-btn" id="currencyBtn" type="button">
+                    NGN ₦
+                </button>
+
+                <a href="shop.html" class="shop-btn">Cart</a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                    aria-controls="navMenu" type="button">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="">
+                <source src="assets/Oriki-hero.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-tag">
+                    ROOTED IN CULTURE. MADE FOR GENERATIONS.
+                </p>
+
+                <h1>
+                    Wear Your <br>
+                    <span>Heritage.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover a new expression of Yoruba fashion,
+                    where timeless tradition meets contemporary elegance.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#collection" class="primary-btn">
+                        Explore Collection <span>↗</span>
+                    </a>
+
+                    <a href="#story" class="secondary-btn">
+                        Discover ORIKI
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- <div class="hero-bottom">
+                <p>CRAFTED WITH CULTURE</p>
+                <p>LAGOS · NIGERIA</p>
+            </div> -->
+
+            <div class="hero-scroll">
+                <span></span>
+                <p>SCROLL TO EXPLORE</p>
+            </div>
+
+        </section>
+
+        <!-- Next homepage sections will go here -->
+
+    </main>
+
+    <!-- BRAND INTRODUCTION -->
+    <section class="brand-intro" id="story">
+
+        <div class="brand-intro-image">
+            <img src="assets/Oriki.jpg" alt="ORIKI traditional Yoruba fashion craftsmanship">
+            <span class="image-caption">CULTURE IN EVERY THREAD</span>
+        </div>
+
+        <div class="brand-intro-content">
+
+            <p class="section-label">THE ORIKI IDENTITY</p>
+
+            <h2>
+                More Than Clothing.
+                <span>A Living Heritage.</span>
+            </h2>
+
+            <p class="brand-description">
+                ORIKI is a celebration of Yoruba identity, culture
+                and craftsmanship. We bring the beauty of traditional
+                African fashion into the modern world through carefully
+                curated designs made for today's generation.
+            </p>
+
+            <p class="brand-description">
+                Every fabric tells a story. Every detail carries
+                meaning. Every piece is an expression of where
+                we come from.
+            </p>
+
+            <a href="#collection" class="story-link">
+                DISCOVER OUR STORY <span>↗</span>
+            </a>
+
+            <div class="brand-signature">
+                <span>ORIKI</span>
+                <p>ROOTED IN CULTURE. MADE FOR GENERATIONS.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED COLLECTION -->
+    <section class="featured-collection" id="collection">
+
+        <div class="collection-header">
+            <div>
+                <p class="section-label">CURATED FOR YOU</p>
+                <h2>Our <span>Collection</span></h2>
+                <p class="collection-description">
+                    Discover pieces that celebrate heritage,
+                    craftsmanship and contemporary style.
+                </p>
+            </div>
+
+            <a href="#all-products" class="view-all">
+                VIEW ALL COLLECTIONS <span>↗</span>
+            </a>
+        </div>
+
+        <div class="collection-grid">
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card">
+                <a href="#" class="product-image">
+                    <img src="assets/Product 2.jpg" alt="Traditional men's Yoruba agbada">
+                    <span class="product-tag">BESTSELLER</span>
+                </a>
+                <div class="product-info">
+                    <div>
+                        <p class="product-category">MEN'S COLLECTION</p>
+                        <h3>Classic Royal Agbada</h3>
+                    </div>
+                    <p class="product-price">₦85,000</p>
+                </div>
+            </article>
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card">
+                <a href="#" class="product-image">
+                    <img src="assets/Product 1.jpg" alt="Traditional Yoruba women's aso oke outfit">
+                </a>
+                <div class="product-info">
+                    <div>
+                        <p class="product-category">WOMEN'S COLLECTION</p>
+                        <h3>Elegance Aso Oke</h3>
+                    </div>
+                    <p class="product-price">₦95,000</p>
+                </div>
+            </article>
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card">
+                <a href="#" class="product-image">
+                    <img src="assets/Product 3.webp" alt="Men's contemporary traditional outfit">
+                    <span class="product-tag">NEW ARRIVAL</span>
+                </a>
+                <div class="product-info">
+                    <div>
+                        <p class="product-category">MEN'S COLLECTION</p>
+                        <h3>Modern Senator Set</h3>
+                    </div>
+                    <p class="product-price">₦65,000</p>
+                </div>
+            </article>
+
+            <!-- PRODUCT 4 -->
+            <article class="product-card">
+                <a href="#" class="product-image">
+                    <img src="assets/Product 4.jpg" alt="Elegant Yoruba women's traditional attire">
+                </a>
+                <div class="product-info">
+                    <div>
+                        <p class="product-category">WOMEN'S COLLECTION</p>
+                        <h3>Heritage Iro & Buba</h3>
+                    </div>
+                    <p class="product-price">₦90,000</p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="collection-bottom">
+            <a href="/collection.html" class="collection-button">
+                EXPLORE ALL PRODUCTS <span>↗</span>
+            </a>
+        </div>
+
+    </section>
+    <!-- NEW ARRIVALS SECTION -->
+    <section class="new-arrivals" id="new-arrivals">
+
+        <div class="new-arrivals-header">
+            <div>
+                <span class="section-label">JUST ARRIVED</span>
+                <h2>New <em>Arrivals</em></h2>
+                <p>
+                    Discover our latest pieces, thoughtfully crafted
+                    to bring tradition and modern style together.
+                </p>
+            </div>
+
+            <a href="#all-products" class="new-arrivals-link">
+                EXPLORE ALL <span>↗</span>
+            </a>
+        </div>
+
+        <div class="new-arrivals-grid">
+
+            <article class="arrival-card">
+                <div class="arrival-image">
+                    <img src="assets/new-arrival-1.jpg" alt="Traditional Yoruba fashion">
+
+                    <span class="arrival-tag">NEW</span>
+                </div>
+
+                <div class="arrival-info">
+                    <div>
+                        <h3>Royal Heritage Agbada</h3>
+                        <p>Men's Collection</p>
+                    </div>
+                    <span>₦120,000</span>
+                </div>
+            </article>
+
+            <article class="arrival-card">
+                <div class="arrival-image">
+                    <img src="assets/new-arrival-2.jpg" alt="Elegant traditional Yoruba women's outfit">
+
+                    <span class="arrival-tag">NEW</span>
+                </div>
+
+                <div class="arrival-info">
+                    <div>
+                        <h3>Adire Elegance</h3>
+                        <p>Women's Collection</p>
+                    </div>
+                    <span>₦75,000</span>
+                </div>
+            </article>
+
+            <article class="arrival-card">
+                <div class="arrival-image">
+                    <img src="assets/new-arrivl-3.jpg" alt="Modern traditional Nigerian outfit">
+
+                    <span class="arrival-tag">NEW</span>
+                </div>
+
+                <div class="arrival-info">
+                    <div>
+                        <h3>Modern Senator Set</h3>
+                        <p>Men's Collection</p>
+                    </div>
+                    <span>₦85,000</span>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+    <!-- END NEW ARRIVALS -->
+
+    <!-- CUSTOM TAILORING SECTION -->
+    <section class="custom-tailoring" id="custom-tailoring">
+
+        <div class="tailoring-image">
+            <img src="assets/custom-tailoring.jpg" alt="Traditional Yoruba outfit made by ORIKI">
+        </div>
+
+        <div class="tailoring-content">
+            <span class="section-label">MADE JUST FOR YOU</span>
+
+            <h2>
+                Tradition,<br>
+                Tailored <em>For You.</em>
+            </h2>
+
+            <p>
+                Every individual has a story. Let us help you express yours
+                through carefully crafted traditional clothing, made to
+                reflect your measurements, taste and personality.
+            </p>
+
+            <a href="contact.html" class="tailoring-button">
+                REQUEST A CUSTOM ORDER <span>↗</span>
+            </a>
+        </div>
+
+    </section>
+    <!-- END CUSTOM TAILORING -->
+
+    <!-- CRAFTSMANSHIP SECTION -->
+    <section class="craftsmanship" id="craftsmanship">
+
+        <div class="craftsmanship-heading">
+            <span class="section-label">THE ART OF OUR CRAFT</span>
+            <h2>Rooted in Heritage.<br><em>Made for Today.</em></h2>
+        </div>
+
+        <div class="craftsmanship-content">
+            <div class="craftsmanship-image">
+                <img src="assets/oriki-craft.jpg" alt="Traditional Yoruba fabric and clothing craftsmanship">
+            </div>
+
+            <div class="craftsmanship-text">
+                <span class="craft-number">01 / OUR PHILOSOPHY</span>
+
+                <h3>Every Detail Tells a Story.</h3>
+
+                <p>
+                    At ORIKI, clothing is more than what we wear.
+                    It is a connection to our roots, our identity and
+                    the stories passed down through generations.
+                </p>
+
+                <p>
+                    We bring traditional inspiration together with
+                    contemporary style to create pieces that honour
+                    our heritage while embracing the present.
+                </p>
+
+                <a href="#story" class="craftsmanship-link">
+                    DISCOVER OUR STORY <span>↗</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- END CRAFTSMANSHIP -->
+
+    <!-- ORIKI FOOTER -->
+    <footer class="oriki-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">ORIKI</a>
+
+                <p>
+                    Rooted in heritage. Made for today.
+                    Discover clothing that celebrates
+                    identity, culture and timeless style.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="TikTok">TikTok</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
+                <a href="index.html">Home</a>
+                <a href="#collection">Collection</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#story">Our Story</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>COLLECTIONS</h3>
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="#custom-tailoring">Custom Tailoring</a>
+                <a href="#craftsmanship">Craftsmanship</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <a href="mailto:hello@oriki.com">Email Us</a>
+                <a href="#">Customer Support</a>
+                <a href="#">Shipping Information</a>
+                <a href="#">Returns & Exchanges</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ORIKI. All Rights Reserved.</p>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <span>CRAFTED WITH HERITAGE.</span>
+        </div>
+
+    </footer>
+    <!-- END ORIKI FOOTER -->
+</body>
+
+</html>

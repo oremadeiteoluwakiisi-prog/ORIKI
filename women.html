@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore ORIKI women's Ankara and traditional fashion collection.">
+    <title>Women's Collection | ORIKI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collection.css">
+    <script src="currency.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="collection.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">ORIKI<span>.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="collection.html" class="nav-link">Collection</a>
+                <a href="men.html" class="nav-link">Men</a>
+                <a href="women.html" class="nav-link active" aria-current="page">Women</a>
+                <a href="index.html#story" class="nav-link">Our Story</a>
+            </div>
+            <div class="nav-actions">
+                <button class="currency-btn" id="currencyBtn" type="button">NGN ₦</button>
+                <a href="shop.html" class="shop-btn">Cart</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                    aria-controls="navMenu" type="button">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="collection-hero">
+            <div class="collection-hero-image">
+                <video autoplay muted loop playsinline preload="metadata"
+                    poster="assets-collection/download (4).jpg"
+                    aria-label="ORIKI women's fashion video">
+                    <source src="assets-collection/women hero background.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="collection-hero-overlay"></div>
+            <div class="collection-hero-content">
+                <p class="collection-hero-label">THE ORIKI WOMEN'S COLLECTION</p>
+                <h1>Grace in <br><span>Every Detail.</span></h1>
+                <p class="collection-hero-description">
+                    Expressive Yoruba-inspired designs crafted to celebrate elegance, confidence and individuality.
+                </p>
+                <a href="#products" class="collection-hero-button">
+                    EXPLORE WOMEN'S COLLECTION <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="all-collections" id="products">
+            <div class="all-collections-header">
+                <div>
+                    <p class="section-label">WOMEN'S EDIT</p>
+                    <h2>Shop <span>Women</span></h2>
+                </div>
+                <p class="products-count" id="productsCount">0 PIECES</p>
+            </div>
+
+            <div class="collection-filters" aria-label="Filter women's collection">
+                <button class="filter-btn active" type="button" data-filter="women" aria-pressed="true">All Women's
+                    Pieces</button>
+                <button class="filter-btn" type="button" data-filter="ankara" aria-pressed="false">Ankara</button>
+                <button class="filter-btn" type="button" data-filter="asooke" aria-pressed="false">Aso Oke</button>
+            </div>
+
+            <div class="collection-product-grid" id="productGrid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="oriki-footer">
+        <div class="footer-bottom">
+            <p>© 2026 ORIKI. All Rights Reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <span>CRAFTED WITH HERITAGE.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
