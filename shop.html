@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="collection.css">
     <script src="currency.js" defer></script>
     <script src="cart.js" defer></script>
-    <script src="main.js" defer></script>
-    <script src="payment-config.js" defer></script>
     <script src="shop.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +32,9 @@
             </div>
             <div class="nav-actions">
                 <button class="currency-btn" id="currencyBtn" type="button">NGN ₦</button>
-                <a href="shop.html" class="shop-btn" aria-current="page">Cart</a>
+                <a href="shop.html" class="shop-btn" aria-current="page">
+                    Cart <span class="cart-count" aria-live="polite" hidden>0</span>
+                </a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
                     aria-controls="navMenu" type="button">
                     <span></span>
@@ -48,7 +49,7 @@
             <p class="section-label">YOUR SELECTION</p>
             <div>
                 <h1>Shopping <span>Cart</span></h1>
-                <p id="cartCount">0 ITEMS</p>
+                <p id="cartItemCount" aria-live="polite">0 ITEMS</p>
             </div>
         </section>
 
@@ -60,12 +61,10 @@
                     <span>Total</span>
                     <strong id="cartTotal">₦0</strong>
                 </div>
-                <p class="cart-payment-note">Paystack checkout charges in Nigerian naira. USD prices are indicative.</p>
-                <label class="checkout-email-label" for="checkoutEmail">Email for your receipt</label>
-                <input id="checkoutEmail" type="email" autocomplete="email" required
-                    placeholder="you@example.com">
-                <button id="checkoutButton" type="button">Pay securely with Paystack</button>
-                <p id="checkoutStatus" class="checkout-status" role="status" aria-live="polite"></p>
+                <p class="cart-order-note">Send an order request by email. Payment is arranged directly with ORIKI; no online checkout is used.</p>
+                <a class="cart-order-link" id="orderRequestLink" href="mailto:hello@oriki.com">
+                    Request Order by Email
+                </a>
             </aside>
         </section>
     </main>

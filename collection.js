@@ -312,53 +312,30 @@ if (productGrid) {
         contactLink.href = `mailto:hello@oriki.com?subject=${encodeURIComponent(`Enquiry: ${product.name}`)}&body=${encodeURIComponent(`Hello ORIKI,\n\nI would like to know more about ${product.name}.`)}`;
         contactLink.textContent = "Contact";
 
-        const cartButton = document.createElement("button");
-        cartButton.type = "button";
-        cartButton.className = "product-action cart-action";
-        cartButton.textContent = "Add to Cart";
-        cartButton.setAttribute("aria-label", `Add ${product.name} to cart`);
-
-        cartButton.addEventListener("click", () => {
-            const priceNgn = Number(String(product.price).replace(/[^0-9]/g, ""));
-            if (!window.orikiCart) {
-                try {
-                    const storedCart = JSON.parse(localStorage.getItem("oriki-cart") || "[]");
-                    const existingItem = storedCart.find(item => item.id === productId);
-                    if (existingItem) {
-                        existingItem.quantity += 1;
-                    } else {
-                        storedCart.push({
-                            id: productId,
-                            name: product.name,
-                            priceNgn,
-                            image: product.image,
-                            quantity: 1
-                        });
-                    }
-                    localStorage.setItem("oriki-cart", JSON.stringify(storedCart));
-                    document.querySelectorAll(".cart-count").forEach(badge => {
-                        badge.textContent = storedCart.reduce((total, item) => total + item.quantity, 0);
-                        badge.hidden = false;
-                    });
-                } catch (error) {
-                    window.alert("Please enable browser storage and try adding the item again.");
-                    return;
-                }
-            } else {
+        const addToCartButton = document.createElement("button");
+        addToCartButton.type = "button";
+        addToCartButton.className = "product-action cart-action";
+        addToCartButton.textContent = "Add to Cart";
+        addToCartButton.setAttribute("aria-label", `Add ${product.name} to cart`);
+        addToCartButton.addEventListener("click", () => {
+            const priceNgn = Number(product.price.replace(/[^\d]/g, ""));
+            try {
                 window.orikiCart.add({
                     id: productId,
                     name: product.name,
                     priceNgn,
                     image: product.image
                 });
+                addToCartButton.textContent = "Added ✓";
+                window.setTimeout(() => {
+                    addToCartButton.textContent = "Add to Cart";
+                }, 1200);
+            } catch (error) {
+                window.alert(error.message);
             }
-            cartButton.textContent = "Added ✓";
-            window.setTimeout(() => {
-                cartButton.textContent = "Add to Cart";
-            }, 1200);
         });
 
-        actions.append(likeButton, commentButton, contactLink, cartButton);
+        actions.append(likeButton, commentButton, contactLink, addToCartButton);
 
         const commentPanel = document.createElement("div");
         commentPanel.className = "product-comment-panel";

@@ -130,6 +130,23 @@ button {
     letter-spacing: 1px;
 }
 
+.cart-count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: #947b58;
+    color: #fff;
+    font-size: 9px;
+    line-height: 1;
+}
+
+.cart-count[hidden] {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
     background: transparent;

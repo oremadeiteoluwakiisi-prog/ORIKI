@@ -381,25 +381,6 @@
     color: #f5f1e9;
 }
 
-.cart-action {
-    border-color: #947b58;
-    background: #947b58;
-    color: #fff;
-}
-
-.cart-count {
-    display: inline-grid;
-    place-items: center;
-    min-width: 18px;
-    height: 18px;
-    margin-left: 7px;
-    border-radius: 50%;
-    background: #947b58;
-    color: #fff;
-    font-size: 9px;
-    line-height: 1;
-}
-
 .product-action:focus-visible,
 .product-comment-submit:focus-visible,
 .product-comment-panel textarea:focus-visible {
@@ -455,12 +436,12 @@
 }
 
 .header-light {
-    background: #171713;
+    background: rgba(19, 19, 16, 0.96);
 }
 
 .cart-page {
     min-height: 100vh;
-    padding: 150px 7% 100px;
+    padding: 140px 7% 90px;
     background: #f5f1e9;
 }
 
@@ -555,6 +536,11 @@
     cursor: pointer;
 }
 
+.cart-quantity button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 .cart-remove {
     border: none;
     background: transparent;
@@ -571,7 +557,7 @@
     background: #e9e3d8;
 }
 
-.cart-summary>p {
+.cart-summary>p:first-child {
     margin-bottom: 25px;
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -585,58 +571,26 @@
     border-top: 1px solid #d8d0c3;
 }
 
-.cart-summary button {
-    width: 100%;
-    border: none;
-    background: #171713;
-    color: #fff;
-    padding: 15px;
-    font-size: 10px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.cart-summary button:disabled {
-    opacity: 0.45;
-    cursor: not-allowed;
-}
-
-.cart-payment-note,
-.checkout-email-label,
-.checkout-status {
-    display: block;
-    margin-bottom: 12px;
+.cart-order-note {
+    margin: 0 0 16px;
     color: #68645d;
     font-size: 11px;
     line-height: 1.6;
 }
 
-.checkout-email-label {
-    margin-bottom: 6px;
-    color: #171713;
+.cart-order-link {
+    display: block;
+    padding: 15px;
+    background: #171713;
+    color: #fff;
+    font-size: 10px;
     font-weight: 600;
+    text-align: center;
 }
 
-.cart-summary input[type="email"] {
-    width: 100%;
-    min-height: 44px;
-    margin-bottom: 14px;
-    padding: 10px;
-    border: 1px solid #d3cbbc;
-    background: #fff;
-    color: #171713;
-    font: inherit;
-    font-size: 12px;
-}
-
-.cart-summary input[type="email"]:focus-visible {
-    outline: 2px solid #947b58;
-    outline-offset: 2px;
-}
-
-.checkout-status {
-    min-height: 18px;
-    margin: 12px 0 0;
+.cart-order-link[aria-disabled="true"] {
+    opacity: 0.45;
+    cursor: not-allowed;
 }
 
 .cart-empty {
@@ -656,7 +610,6 @@
     font-size: 10px;
     font-weight: 600;
 }
-
 
 /* =====================================
    EMPTY FILTER MESSAGE
